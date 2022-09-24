@@ -8,12 +8,12 @@ from SDSongBot import SDbot as app
 from SDSongBot import LOGGER
 
 pm_start_text = """
-👋 Hey [{}](tg://user?id={}), **I'm Song Downloader Bot**
+👋 Hey [{}](tg://user?id={}), \n\n **I'm Emo Song Downloader Bot**
 **Now send me the song name you want to download**
      
-Syntax : ```/dsong Faded```
+Example : ```/song Faded```
       
-Powerd By @SDBotsz 🔥
+Powerd By @EmoBotDevolopers ⚡ 
 """
 
 @app.on_message(filters.command("start"))
@@ -26,10 +26,10 @@ async def start(client, message):
             [
                 [
                      InlineKeyboardButton(
-                        text="Channel 🙋‍♀️", url="https://t.me/SDBOTs_Inifinity"
+                        text="⚡ Channel ⚡ ", url="https://t.me/EmoBotDevolopers"
                     ),
                     InlineKeyboardButton(
-                        text="Dev 🔥", url="https://t.me/Itz_Sadew"
+                        text="👨‍💻 Devoloper 👨‍💻", url="https://t.me/ImRishmika"
                     )
                 ]
             ]
@@ -41,11 +41,5 @@ async def start(client, message):
 
 app.start()
 LOGGER.info("""
-
-░██████╗██████╗░██████╗░░█████╗░████████╗░██████╗
-██╔════╝██╔══██╗██╔══██╗██╔══██╗╚══██╔══╝██╔════╝
-╚█████╗░██║░░██║██████╦╝██║░░██║░░░██║░░░╚█████╗░
-░╚═══██╗██║░░██║██╔══██╗██║░░██║░░░██║░░░░╚═══██╗
-██████╔╝██████╔╝██████╦╝╚█████╔╝░░░██║░░░██████╔╝
-╚═════╝░╚═════╝░╚═════╝░░╚════╝░░░░╚═╝░░░╚═════╝░ SDSongBot is online.""")
+Emo  Song Downloader is Online !""")
 idle()
