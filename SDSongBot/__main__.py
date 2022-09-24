@@ -19,7 +19,6 @@ Powerd By @EmoBotDevolopers ⚡
 @app.on_message(filters.command("start"))
 async def start(client, message):
     chat_id = message.chat.id
-    user_id = message.from_user["id"]
     name = message.from_user["first_name"]
     if message.chat.type == "private":
         btn = InlineKeyboardMarkup(
